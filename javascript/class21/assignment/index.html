@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-color: aqua;
+        max-width: 800px;
+        min-height: auto;
+        margin: auto;
+        margin-top: 200px;
+    }
+    
+    #numberOne{
+        padding: 15px 15px;
+        border: 2px solid black;
+    }
+    #numberTwo{
+        padding: 15px 15px;
+        border: 2px solid black;
+    }
+    section:nth-child(1){
+        display: flex;
+        justify-content: space-around;
+    }
+    section:nth-child(2){
+        margin-top: 50px;
+        display: flex;
+        justify-content: space-around;
+    }
+    button{
+        padding: 10px 10px;
+        font-size: 17px;
+        color: white;
+        border-radius: 10px;
+        background-color: black;
+    }
+    section:nth-child(3){
+        margin-top: 50px;
+        text-align: center;
+        font-size: 20px;
+        color: purple;
+    }
+</style>
+<body>
+    <section>
+        <div>
+            <input placeholder="number" value="0" id="numberOne" type="number">
+        </div>
+        <div>
+            <input placeholder="number" value="0" id="numberTwo" type="number">
+        </div>
+    </section>
+
+    <section>
+        <div><button id="add" onclick="add()">adiition(+)</button></div>
+        <div><button id="substract" onclick="substract()">substraction(-)</button></div>
+        <div><button id="multiply" onclick="multiply()">multiplication(*)</button></div>
+        <div><button id="division" onclick="division()">division(/)</button></div>
+    </section>
+
+    <section class="result">
+        <h2>RESULT: <span id="result">0</span> </h2>
+    </section>
+
+    
+    <script>
+        let numberOne = document.getElementById("numberOne")
+        let numberTwo = document.getElementById("numberTwo")
+        let result    = document.getElementById("result")
+
+function add() {
+    if(numberOne.value && numberTwo.value) {
+        let add= parseInt(numberOne.value) + parseInt(numberTwo.value);
+    result.innerHTML = add;
+    } else{
+        alert("please, enter the value!!")
+    }
+}
+
+function substract() {
+    if(numberOne.value && numberTwo.value){
+        let substract= parseInt(numberOne.value) - parseInt(numberTwo.value);
+        result.innerHTML = substract; 
+    } else{
+        alert("please, enter the value!!")
+    }
+}
+
+function multiply() {
+    if(numberOne.value && numberTwo.value){
+        let multiply= parseInt(numberOne.value) * parseInt(numberTwo.value);
+        result.innerHTML = multiply;
+    } else{
+        alert("please, enter the value!!")
+    }
+}
+
+function division() {
+    if(numberOne.value && numberTwo.value) {
+        let division= parseInt(numberOne.value) / parseInt(numberTwo.value);
+        result.innerHTML = division;
+    } else{
+        alert("please, enter the value!!")
+    }
+}
+    </script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+
+header{background-color: #1C3180;
+height: 100px;
+color: white;
+text-align: center;
+padding-top: 20px;
+border-color: #FE630E;
+margin-bottom: 10px;
+}
+
+.first{background-color: #FFFFFF;
+padding-right: 500px;
+padding-left:620px;
+height: 470px;
+}
+
+.picture{
+width: 700px;
+margin-left: -10px;
+}
+
+.last{background-color: #1C3180 ;
+    padding-top: 10px;
+}
+
+.last{color: white;}
+
+.down{padding-left:620px;
+height: 150px;
+width: 700px;}
+
+span{color: #FE630E;
+}
+
+.op{
+background-color: #FE630E;
+text-align: center;
+color: #FFFFFF;
+padding-left:20px;
+height: 30px;
+display: inline-block;
+min-width:100px;
+margin-left: 620px;
+padding-top: 10px;
+}
+
+.tion{background-color: #FFFFFF;
+color: black;
+text-align: center;
+height: 30px;
+width: 100px;
+display: inline-block;
+padding-top: 10px;
+}
+
+.head{color: #FE630E;}
+
+.dialouge{width: 700px;}

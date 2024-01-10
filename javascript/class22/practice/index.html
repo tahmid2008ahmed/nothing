@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: lightblue;
+        flex-direction: column;
+    }
+    button {
+        border: none;
+        padding: 20px 40px;
+        font-size: 30px;
+        background-color: black;
+        color: white;
+    }
+    button:hover {
+        background-color: yellowgreen;
+    }
+    .popup-body{
+        padding: 20px;
+        width: 400px;
+        height: 200px;
+        top: 0;
+        left: 0;
+        background-color: aquamarine;
+        border: 4px solid red;
+    }
+    .popup {
+        position: absolute;
+        display: none;
+    }
+    .heading{
+        color: magenta;
+        font-size: 45px;
+    }
+</style>
+<body>
+    <h2>let's pass time by JavaScript</h2>
+    <section>
+        <button class="btn" onclick="openPopup()">click to view more</button>
+        <button class="btn2">click to change color</button>
+    </section>
+    <section class="popup">
+        <div  class="popup-body"   onclick="closePopup()">
+            <h2>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est, cum!</h2>
+            <br> <br>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis obcaecati nobis doloribus natus nihil facere ex a optio consequuntur velit. Quod ipsam sint necessitatibus reiciendis veniam eaque commodi, quae unde.</p>
+        </div>
+    </section>
+</body>
+<script>
+    let popup = document.querySelector(".popup");
+    let button = document.querySelector(".btn")
+    let button2 = document.querySelector(".btn2")
+
+    function openPopup() {
+        popup.style.display = "flex";
+    }
+
+    function closePopup() {
+        popup.style.display = "none" 
+    }
+
+    button2.addEventListener("click", () => {
+        document.querySelector("h2").classList.toggle("heading")
+    }  )
+
+</script>
+</html>

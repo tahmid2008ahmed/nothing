@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&family=Poppins:wght@600&display=swap');
+
+body{
+    font-family: 'DM Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    margin: auto;
+    max-width: 1300px;
+}
+
+a{text-decoration: none;}
+
+.button01{color: white;
+background-color:#383838 ;
+padding: 7px 30px;
+border-radius: 10px;}
+
+header a{color: black;
+margin-top: 50px;}
+
+.logo{margin-top: -5px;}
+
+header nav{
+    display: flex;
+    gap: 50px;
+margin-top: -50px;
+}
+
+header{display: flex;
+justify-content: space-between;
+flex-direction: row;
+margin-top: 20px;}
+
+.same-color{color:#878CFF ;}
+
+.first{
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+}
+
+.button02{padding: 8px 30px;
+background-color: #878CFF;
+color: white;
+border-radius: 10px;}
+
+.second{margin-top: 70px;
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+gap: 450px;
+margin-bottom: 70px;
+background-color:#FCFCFC ;}
+
+.button03{padding: 8px 30px;
+    background-color: #878CFF;
+    color: white;
+    border-radius: 10px;}
+
+.third-heading{text-align: center;}
+
+.third{display: flex;
+flex-direction: row;
+justify-content: space-between;
+margin-bottom: 150px;
+}
+
+.work{padding-left: 40px;
+width: 300px;}
+
+.third a{text-decoration: underline;}
+
+.fourth a{text-decoration: underline;}
+
+.fourth{display: flex;
+justify-content: space-between;
+flex-direction: row;
+margin-bottom: 100px;}
+
+.fourth-box{border: 1px solid #E2E2E2;
+width: 550px;
+height: 280px;
+padding-top: 30px;
+padding-left: 30px;
+padding-right: 30px;}
+
+footer{background-color: black;
+height: 150px;}
+
+footer p{color: white;
+text-align: center;
+display: block;
+}
+
+.last{display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+gap: 5px;
+padding-top: 50px;
+margin: auto;}
+
+
+
+@media(max-width:600px){
+header{padding: 0 30px;}
+section{padding: 0 30px;}
+
+header nav{display: none;}
+
+.second{display: flex;
+gap: 0;
+flex-direction: column;
+height: 7
+10px;}
+
+.third{display: flex;
+    gap: 50px;
+flex-direction: column;}
+
+.fourth{
+    display: flex;
+    gap: 50px;
+flex-direction: column;
+}
+
+.fourth-box{width: 450px;
+height: 320px;}
+
+}

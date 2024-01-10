@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+body{
+    font-family: 'Poppins', sans-serif;
+    max-width: 900px;
+    height: auto;
+    margin: auto;
+    margin-top: 10px;
+    background-color: white;
+
+}
+
+.logo{
+    color: #385F96;
+}
+
+h1{
+    color: #385F96;  
+}
+
+a{
+    text-decoration: none;
+    color: #385F96;
+}
+
+.head{
+  display: flex;
+  align-items: center; 
+  justify-content:space-between ; 
+}
+
+.option{
+    display: flex;
+    gap: 29px;
+}
+
+.sidebar{
+    background-color: #385F96;
+    color: white;
+    padding: 5px 10px;
+border-radius: 20px;
+}
+
+.first{
+    display: flex;
+justify-content:space-between;
+margin-top: 60px;
+margin-bottom: 100px;
+}
+
+.pic01{
+height: 300px;
+width: 360px;
+}
+
+.left{
+width: 450px;
+height: auto; 
+}
+
+.second{
+    justify-content: space-between;
+    display: flex;
+    margin-bottom: 90px;
+}
+
+.middle{
+    width: 490px;
+    margin-left: 160px;
+}
+
+.pic02{
+    height: 320px;
+    width: 400px;
+}
+
+p{
+    width: 350px;
+}
+
+.third{
+    justify-content: space-between;
+    display: flex;
+    background-color: #78E5EB;
+}
+
+.pic03{
+    height: 300px;
+width: 360px;
+}
+
+.right{
+    margin: 100px 0 0 70px;
+}
+
+footer{
+    background-color: #385F96;
+    text-align: center;
+    padding: 5px 0;
+    color: white;
+}
+
+.contant h1 {
+    position: relative;
+}
+
+.contant h1::before{
+content: "";
+width: 100px;
+height: 100px;
+background-image: url(images/batch.png);
+background-size: contain;
+position: absolute;
+top: -50px;
+left: -60px;
+}
