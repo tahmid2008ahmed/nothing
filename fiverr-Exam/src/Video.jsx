@@ -2,7 +2,7 @@ function Video() {
   return (
     <>
       <div
-        className="video-container lg:w-1100px md:w-95 sm:w-95 rounded-xl overflow-hidden my-10 mb-10"
+        className="scale-up-center video-container lg:w-1100px md:w-95 sm:w-95 rounded-xl overflow-hidden my-10 mb-10"
         style={{
           maxWidth: "100%", // Maximum width for responsiveness
           width: "1100px",

@@ -39,7 +39,7 @@ function Pricing() {
         </span>
       </div>
 
-      <div className="text-[#525B5B] grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1   px-10">
+      <div className="text-[#525B5B] p-1 grid lg:grid-cols-3 md:grid-cols-2 md:mx-0 mx-auto grid-cols-1 ">
         <div className="bg-white p-1 sm:mx-auto  w-[320px] rounded-2xl mb-10 ">
           <div className="bg-[#F6F6F7] p-5 rounded-2xl">
             <h1 className="text-[25px]">Hobby</h1>

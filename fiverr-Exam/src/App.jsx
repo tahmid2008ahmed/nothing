@@ -17,9 +17,9 @@ function App() {
           {/* Define your specific routes here */}
           <Route path="/" element={<Home />} />
           <Route path="/video" element={<Video />} />
-          <Route path="/About" element={<About />} />
-          <Route path="/Blog" element={<Blog />} />
-          <Route path="/Contact" element={<Contact />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/blog" element={<Blog />} />
+          <Route path="/contact" element={<Contact />} />
           {/* Handle 404, Not Found */}
           <Route path="*" element={<NotFound />} />
         </Routes>

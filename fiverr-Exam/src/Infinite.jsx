@@ -321,7 +321,7 @@ function Infinite() {
                 Get a personal growth strategy
               </h1>
               <p className="mb-3 text-[#525B5B] text-[20px]">
-                On this call, we'll assess your business and start working on
+                On this call, we will assess your business and start working on
                 your personal growth strategy.
               </p>
             </div>

@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 function Footer() {
   return (
     <>
@@ -18,7 +19,7 @@ function Footer() {
         <h1 className="mb-4 text-center text-[30px]">
           Ready to <span className="text-[#1A5EFF]">Get Started?</span>
         </h1>
-        <p className="text-center w-[500px] mx-auto">
+        <p className="text-center max-w-[500px] mx-auto">
           Experience the future of business operations with AI
           automation—increased speed, accuracy, and adaptability, driving
           overall productivity gains.
@@ -30,7 +31,7 @@ function Footer() {
                px-8 py-2 text-[15px] my-10
              hover:bg-[#202B38] duration-500 "
           >
-            Book Your Free Audit Call
+            <Link to="/contact">Book Your Free Audit Call</Link>
           </button>
         </div>
 
@@ -46,23 +47,20 @@ function Footer() {
         </div>
 
         <div className="flex mt-10 mx-auto w-[300px] justify-around pb-[50px]">
-          <a
-            className="hover:text-[#1A5EFF] duration-500 focus:text-[#1A5EFF]"
-            href=""
-          >
-            About
+          <a className="hover:text-[#1A5EFF] duration-500 focus:text-[#1A5EFF]">
+            <Link to="/about">About</Link>
           </a>
           <a
             className="hover:text-[#1A5EFF] duration-500 focus:text-[#1A5EF]"
             href=""
           >
-            Contact
+            <Link to="/contact">Contact</Link>
           </a>
           <a
             className="hover:text-[#1A5EFF] duration-500 focus:text-[#1A5EF]"
             href=""
           >
-            Blog
+            <Link to="/blog">Blog</Link>
           </a>
         </div>
       </section>
